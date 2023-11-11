@@ -1,0 +1,60 @@
+{
+  "name": "nodejs-typescript-modern-starter",
+  "version": "1.0.0",
+  "main": "dist/src/index.js",
+  "typings": "dist/src/index.d.ts",
+  "bin": {
+    "nodejs-typescript-modern-starter": "dist/src/index.js",
+    "ntms": "dist/src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xddq/schema2typebox.git"
+  },
+  "keywords": [
+    "nodejs",
+    "typescript",
+    "modern",
+    "starter",
+    "nodejs typescript modern starter",
+    "ts",
+    "esbuild",
+    "prettier",
+    "typescript5",
+    "CI/CD",
+    "minimal"
+  ],
+  "author": "Pierre Dahmani <hi@pierre-dev.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "node tasks.mjs build",
+    "bundle": "node tasks.mjs bundle",
+    "clean": "node tasks.mjs clean",
+    "dev": "concurrently \"npm:watch-*\"",
+    "format": "node tasks.mjs format --write",
+    "format-check": "node tasks.mjs format --check",
+    "lint": "node tasks.mjs lint --fix",
+    "lint-check": "node tasks.mjs lint",
+    "start": "node tasks.mjs start",
+    "test": "node tasks.mjs test",
+    "watch-node": "node tasks.mjs watch-node",
+    "watch-ts": "node tasks.mjs watch-ts"
+  },
+  "devDependencies": {
+    "@tsconfig/node18": "2.0.1",
+    "@types/node": "18.16.19",
+    "@types/nodemon": "1.19.4",
+    "@types/shelljs": "0.8.12",
+    "@typescript-eslint/eslint-plugin": "5.62.0",
+    "@typescript-eslint/parser": "5.62.0",
+    "concurrently": "7.6.0",
+    "esbuild": "0.18.4",
+    "eslint": "8.53.0",
+    "eslint-config-prettier": "8.10.0",
+    "nodemon": "2.0.22",
+    "prettier": "2.8.8",
+    "shelljs": "0.8.5",
+    "typescript": "5.2.2"
+  },
+  "packageManager": "yarn@3.6.0"
+}
